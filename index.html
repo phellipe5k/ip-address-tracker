@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="input-area">
+    <h1>IP Address Tracker</h1>
+    <input type="text" id="ip-input" placeholder="Search for any IP address or domain">
+    <button id="button"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  <div class="bar-wrap">
+    <div class="bar-result">
+      <div class="ip-address box">
+        <h4>IP ADDRESS</h4>
+        <p id="ip-output">192.212.174.101</p>
+      </div>
+      <div class="location box">
+        <h4>LOCATION</h4>
+        <p id="location-output">Rosemead (Garvey), California - 91770</p>
+      </div>
+      <div class="timezone box">
+        <h4>TIMEZONE</h4>
+        <p id="timezone-output">UTC-07:00</p>
+      </div>
+      <div class="isp box">
+        <h4>ISP</h4>
+        <p id="isp-output">Southern California Edison</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="map">
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/phellipe5k" target="_blank">Luiz Phellipe Carneiro Andrade</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
