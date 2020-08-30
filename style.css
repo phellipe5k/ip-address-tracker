@@ -144,7 +144,7 @@ body {
     height: 150%;
   }
   .input-area {
-    background-size: 100%;
+    background-size: cover;
   }
   .bar-result {
     max-width: 80%;
